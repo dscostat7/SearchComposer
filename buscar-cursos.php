@@ -1,7 +1,6 @@
 <?php
 
 require 'vendor/autoload.php';
-require 'src/Buscador.php';
 
 use Actions\BuscadorDeCursos\Buscador;
 use GuzzleHttp\Client;
@@ -14,5 +13,5 @@ $buscador = new Buscador($client, $crawler);
 $cursos = $buscador->buscar('/cursos-online-programacao/php');
 
 foreach ($cursos as $curso) {
-    echo "<p>$curso</p>" . PHP_EOL;
+    exibeMensagem($curso);
 }

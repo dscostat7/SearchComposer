@@ -12,5 +12,11 @@
         "guzzlehttp/guzzle": "^7.3",
         "symfony/dom-crawler": "^4.2",
         "symfony/css-selector": "^5.2"
+    },
+    "autoload": {
+        "files": ["./functions.php"],
+        "psr-4": {
+            "Actions\\BuscadorDeCursos\\": "src/"
+        }
     }
 }

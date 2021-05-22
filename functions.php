@@ -2,5 +2,5 @@
 
 function exibeMensagem(string $mensagem) 
 {
-    echo "<p>$mensagem</p>" . PHP_EOL;
+    echo "<h3>$mensagem</h3>" . PHP_EOL;
 }
